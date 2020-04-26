@@ -15,9 +15,11 @@ import javafx.beans.property.StringProperty;
  */
 public class Board {
 	private List<Pos> positions;
-	private Map<Pos, StringProperty> cells;
+	private Map<Pos, StringProperty> cells; //ogni volta che carattere cambia il cambiamento si riflette in modo 
+											//automatico nell'interfaccia grafica (si fa con un binding)
+											//ogni volta che cambia stringa il testo del bottone cambia
 
-	private int size;
+	private int size; //grandezza matrice
 
 	/**
 	 * Crea una nuova scacchiera della dimensione specificata
